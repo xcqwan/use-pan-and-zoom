@@ -259,10 +259,12 @@ const usePanZoom = ({
   const onMouseLeave = () => endPanZoom();
 
   const transform = getTransform();
+  const round = v => Math.round(v)
+  const precisionScale = v => v.toFixed(2)
   return {
     container,
     setContainer,
-    transform: `translate3D(${transform.x}px, ${transform.y}px, 0) scale(${transform.zoom})`,
+    transform: `translate3D(${round(transform.x)}px, ${round(transform.y)}px, 0) scale(${precisionScale(transform.zoom)})`,
     center: getCenter(),
     pan: { x: transform.x, y: transform.y },
     zoom: transform.zoom,

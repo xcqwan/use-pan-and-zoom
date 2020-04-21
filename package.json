@@ -1,13 +1,13 @@
 {
-  "name": "use-pan-and-zoom",
-  "version": "0.5.1",
+  "name": "gd-use-pan-zoom",
+  "version": "0.5.2",
   "description": "Pan and zoom a container using React Hooks",
   "source": "src/index.js",
   "main": "build/index.js",
   "umd:main": "build/index.umd.js",
   "module": "build/index.m.js",
   "repository": "https://github.com/wouterraateland/use-pan-and-zoom.git",
-  "author": "Wouter Raateland <wouterraateland@gmail.com>",
+  "author": "xcqwan <xcqwan@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
